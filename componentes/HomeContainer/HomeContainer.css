@@ -1,0 +1,16 @@
+.title {
+  height: calc(100vh - 60vh);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-image: url('/BackgroundHome.jpg');
+  background-size: cover;
+  background-position: right;
+  color: rgb(255, 255, 255);
+  font-size: 2rem;
+  font-weight: bold;
+  padding-left: 50%;
+}
+
+    
