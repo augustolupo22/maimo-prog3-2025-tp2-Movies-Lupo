@@ -26,11 +26,10 @@ export default function MovieDetail({ params }) {
   if (error) return <p className="error">Error al cargar la película.</p>;
   if (!movie) return <p className="loading">Cargando...</p>;
 
-  // Preparar datos para mostrar
-  const backdropUrl = `https://image.tmdb.org/t/p/original${movie.backdrop_path}`; // fondo
-  const posterUrl = `https://image.tmdb.org/t/p/w500${movie.poster_path}`; // poster
-  const releaseDate = movie.release_date; // fecha de estreno
-  const rating = movie.vote_average?.toFixed(1); // calificación promedio
+  const backdropUrl = `https://image.tmdb.org/t/p/original${movie.backdrop_path}`;
+  const posterUrl = `https://image.tmdb.org/t/p/w500${movie.poster_path}`; 
+  const releaseDate = movie.release_date;
+  const rating = movie.vote_average?.toFixed(1); 
 
   return (
     <div
