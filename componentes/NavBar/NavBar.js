@@ -12,9 +12,6 @@ export default function Navbar() {
           height={40}
         />
       </a>
-      <div className="search-box">
-        <input type="search" placeholder="Buscar películas o series..." />
-      </div>
       <div className="nav-links">
         <a href="#Nuevo">Nuevo</a>
         <a href="#Popular">Popular</a>

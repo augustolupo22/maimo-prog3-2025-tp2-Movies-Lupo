@@ -1,7 +1,6 @@
 import Image from "next/image";
 import "./MovieCard.css";
 
-
 export default function MovieCard({ movie }) {
   const verMovies = (id) => {
     window.location.href = `/${id}`;
@@ -26,4 +25,3 @@ export default function MovieCard({ movie }) {
     </div>
   );
 }
-
