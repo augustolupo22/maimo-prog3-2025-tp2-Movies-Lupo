@@ -19,7 +19,6 @@ export default function Navbar() {
         <a href="#Nuevo">Nuevo</a>
         <a href="#Popular">Popular</a>
         <a href="#Listas">Listas</a>
-        <a href="#Deportes">Deportes</a>
       </div>
     </nav>
   );
