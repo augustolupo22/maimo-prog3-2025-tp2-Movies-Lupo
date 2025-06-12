@@ -1,6 +1,5 @@
 "use client";
 
-
 import { useEffect, useState } from "react";
 import MovieCard from "../MovieCard/MovieCard";
 import "./MoviesContainer.css";
@@ -18,8 +17,8 @@ export default function MoviesContainer() {
           "https://api.themoviedb.org/3/trending/movie/day?api_key=8d155a452063365b70d7e38e2609b662";
         const response = await fetch(API_URL);
         const data = await response.json();
-        console.log("Datos de la API:", data); // <- esto
-        console.log("Películas:", data.results); // <- esto
+        console.log("Datos de la API:", data);
+        console.log("Películas:", data.results);
         setMovies(data.results);
         setLoading(false);
       } catch (err) {
