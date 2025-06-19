@@ -1,20 +1,21 @@
 import React from "react";
 import Image from "next/image";
 import "./footer.css";
+import Link from "next/link";
 
 export default function Footer() {
   return (
     <footer className="footer">
       <div className="footer-content">
         <div className="footer-section brand">
-          <a className="logo" href="#Inicio">
+          <Link className="logo" href="/">
             <Image
               src="/LogoMovies.png"
               alt="MovieWatch Logo"
               width={120}
               height={40}
             />
-          </a>
+          </Link>
         </div>
 
         <div className="footer-section contact">

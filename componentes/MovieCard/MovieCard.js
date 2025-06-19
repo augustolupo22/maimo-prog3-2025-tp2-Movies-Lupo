@@ -18,7 +18,7 @@ export default function MovieCard({ movie }) {
       />
       <button
         onClick={() => verMovies(movie.id)}
-        className="mt-2 px-4 py-1 bg-red-600 text-white rounded hover:bg-red-700"
+        className="mt-2 px-4 py-1 bg-red-600 text-white rounded hover:bg-red-700 cursor-pointer"
       >
         Ver más
       </button>
