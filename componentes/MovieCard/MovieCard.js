@@ -1,5 +1,6 @@
 import Image from "next/image";
 import "./MovieCard.css";
+import FavoriteButton from "../FavoritesButton/FavoritesButton";
 
 export default function MovieCard({ movie }) {
   const verMovies = (id) => {
@@ -10,7 +11,11 @@ export default function MovieCard({ movie }) {
     <div className="p-4 rounded shadow-lg bg-white text-black text-center">
       <h3 className="text-lg font-semibold mb-2">{movie.title}</h3>
       <Image
-        src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`}
+        src={
+          movie.poster_path
+            ? `https://image.tmdb.org/t/p/w500${movie.poster_path}`
+            : "/placeholder.png"
+        }
         alt={movie.title}
         width={200}
         height={300}
@@ -22,6 +27,7 @@ export default function MovieCard({ movie }) {
       >
         Ver más
       </button>
+      <FavoriteButton movie={movie} />
     </div>
   );
 }

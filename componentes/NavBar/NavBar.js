@@ -20,10 +20,8 @@ export default function Navbar() {
       <div className="nav-links">
         <a href="#Nuevo">Nuevo</a>
         <a href="#Popular">Popular</a>
-        <a href="#Listas">Listas</a>
-        <a href="#">
-          {favorites.length > 0 ? favorites[0].name : "Sin favoritos"}
-        </a>
+        <Link href="/favorites">Favoritos ({favorites.length})</Link>
+
       </div>
     </nav>
   );

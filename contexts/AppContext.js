@@ -15,8 +15,12 @@ export const AppContextProvider = ({ children }) => {
     setFavorites((prev) => prev.filter((movie) => movie.id !== id));
   };
 
+  const isFavorite = (id) => {
+    return favorites.some((movie) => movie.id === id);
+  };
+
   return (
-    <AppContext.Provider value={{ favorites, addFavorite, removeFavorite }}>
+    <AppContext.Provider value={{ favorites, addFavorite, removeFavorite, isFavorite }}>
       {children}
     </AppContext.Provider>
   );
